@@ -9,6 +9,8 @@ return(
   <form name='register'>
   <label>Name:</label>
   <input type='text' name="user" id='name'/><br/>
+  <label>Password:</label>
+  <input type='password' name="pass" id='pass'/><br/>
   <label>DOB:</label>
   <input type='date' name="dob" id='dob'/><br/>
   <label>Gender:</label>
@@ -30,6 +32,7 @@ savetodb(e){
   e.preventDefault();
   var userData={
     name:document.register.user.value,
+    pass:document.register.pass.value,
     dob:document.register.dob.value,
     gender:document.register.sex.value,
     job:document.register.job.value

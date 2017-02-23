@@ -1,0 +1,54 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'uninstall', '-g', 'babel' ]
+2 info using npm@3.10.3
+3 info using node@v6.7.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly uninstall loadAllDepsIntoIdealtree
+19 silly loadAllDepsIntoIdealTree Finishing
+20 silly loadIdealTree Finishing
+21 silly currentTree lib
+21 silly currentTree `-- babel@6.23.0
+22 silly idealTree lib
+23 silly generateActionsToTake Starting
+24 silly install generateActionsToTake
+25 warn checkPermissions Missing write access to /usr/lib/node_modules/babel
+26 warn checkPermissions Missing write access to /usr/lib/node_modules
+27 silly rollbackFailedOptional Starting
+28 silly rollbackFailedOptional Finishing
+29 silly runTopLevelLifecycles Starting
+30 silly runTopLevelLifecycles Finishing
+31 silly install printInstalled
+32 verbose stack Error: EACCES: permission denied, access '/usr/lib/node_modules/babel'
+32 verbose stack     at Error (native)
+33 verbose cwd /home/osgdev/ReactApp/Server
+34 error Linux 4.2.0-42-generic
+35 error argv "/usr/bin/nodejs" "/usr/bin/npm" "uninstall" "-g" "babel"
+36 error node v6.7.0
+37 error npm  v3.10.3
+38 error path /usr/lib/node_modules/babel
+39 error code EACCES
+40 error errno -13
+41 error syscall access
+42 error Error: EACCES: permission denied, access '/usr/lib/node_modules/babel'
+42 error     at Error (native)
+42 error  { Error: EACCES: permission denied, access '/usr/lib/node_modules/babel'
+42 error     at Error (native)
+42 error   errno: -13,
+42 error   code: 'EACCES',
+42 error   syscall: 'access',
+42 error   path: '/usr/lib/node_modules/babel' }
+43 error Please try running this command again as root/Administrator.
+44 verbose exit [ -13, true ]
